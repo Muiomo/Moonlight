@@ -1,0 +1,329 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+}
+nav {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.397);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+#logo {
+  flex: 10%;
+  background-color: rgba(0, 128, 0, 0);
+  margin: auto;
+  margin-left: 5%;
+}
+#logo #logo_moon {
+  width: 50px;
+  height: 20px;
+}
+#sobre_nos {
+  flex: 70%;
+  background-color: rgba(204, 37, 37, 0);
+  padding: 10px;
+}
+
+#sobre_nos a {
+  background-color: rgba(137, 43, 226, 0);
+  color: black;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+}
+#ctt {
+  flex: 20%;
+  margin-right: 5%;
+  background-color: #ffffff00;
+  border-radius: 10px;
+  border: solid 1px black;
+  cursor: pointer;
+}
+
+/*INICIO DO NOSSO CONTEUDO*/
+.sobre {
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.sobre #primeiro {
+  width: 50%;
+  height: 380px;
+  background-color: rgba(255, 0, 0, 0);
+  margin-top: 120px;
+}
+
+#sobre {
+  font-size: 25px;
+  margin-top: 0px;
+}
+#moon {
+  font-size: 35px;
+}
+#nossainfo {
+  font-size: 20px;
+  text-align: left;
+}
+
+.btn_sobre1 {
+  margin-top: 70px;
+  padding: 20px;
+  background-color: rgb(65, 207, 65);
+  border: none;
+  border-radius: 10px;
+  margin-right: 5%;
+}
+.btn_sobre2 {
+  margin-top: 70x;
+  padding: 20px;
+  background-color: #ffffff00;
+  border: solid rgb(37, 37, 37) 1px;
+  border-radius: 10px;
+}
+.sobre #segundo {
+  width: 50%;
+  height: 380px;
+  background-color: rgba(14, 255, 14, 0);
+  margin-top: 120px;
+}
+
+#segundo #imagem_sobre {
+  width: 450px;
+  float: right;
+}
+
+#marcacao {
+  width: 450px;
+  float: right;
+}
+
+/*INFORMACAO ANO DA CRIACAO,LOCALIZACAO ET*/
+#informacao {
+  display: flex;
+  width: 90%;
+  background-color: rgba(128, 128, 128, 0);
+  height: auto;
+  margin-top: 60px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 10px;
+}
+
+#info1 {
+  background-color: #ffffff;
+  color: black;
+  width: 25%;
+  height: 80px;
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 2%;
+}
+#info2 {
+  background-color: #ffffff;
+  color: black;
+  width: 25%;
+  height: 80px;
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 2%;
+}
+#info3 {
+  background-color: #ffffff;
+  color: black;
+  width: 25%;
+  height: 80px;
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 2%;
+}
+#info4 {
+  background-color: #ffffff;
+  color: black;
+  width: 25%;
+  height: 80px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  padding: 25px;
+  font-size: 50px;
+}
+#missao {
+  display: flex;
+  width: 90%;
+  margin-top: 40px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#missao #bloco_a {
+  background-color: rgba(224, 224, 224, 0);
+  width: 50%;
+  height: auto;
+}
+#missao #bloco_b {
+  background-color: rgba(172, 255, 47, 0);
+  width: 50%;
+  height: auto;
+  padding: 10px;
+}
+
+#bloco_b #titulo {
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+#bloco_b #paragrafo {
+  font-size: 20px;
+}
+
+/*EQUPE*/
+#apresentacao {
+  display: flex;
+  width: 90%;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 100px;
+}
+#apresentacao2 {
+  display: flex;
+  width: 90%;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+  display: none;
+}
+
+#equipe_titulo {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 50px;
+  display: none;
+}
+
+#apresentacao #card1 {
+  background-color: rgb(240, 239, 239);
+  width: 33%;
+  height: 200px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+#apresentacao #card2 {
+  background-color: rgb(240, 239, 239);
+  width: 33%;
+  height: 200px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  margin-right: 5%;
+}
+#apresentacao #card3 {
+  background-color: rgb(240, 239, 239);
+  width: 33%;
+  height: 200px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  margin-right: 5%;
+}
+#apresentacao2 #card4 {
+  background-color: rgb(240, 239, 239);
+  width: 40%;
+  display: inline-block;
+  height: 200px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  margin-right: 10%;
+  margin-left: 5%;
+}
+#apresentacao2 #card5 {
+  background-color: rgb(240, 239, 239);
+  width: 40%;
+  display: block;
+  height: 200px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  margin-right: 5%;
+}
+
+#apresentacao #foto {
+  width: 100px;
+  border: solid red 1px;
+  border-radius: 100%;
+}
+#apresentacao2 #foto {
+  width: 100px;
+  border: solid red 1px;
+  border-radius: 100%;
+}
+
+/*FINALMENTE O FOOTER*/
+.footer {
+  background-color: #0a1f44; /* azul escuro estiloso */
+  color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 50px;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  min-width: 180px;
+}
+
+.footer-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #00bfff;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-section a:hover {
+  color: #00bfff;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

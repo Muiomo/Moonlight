@@ -1,0 +1,313 @@
+/* Responsividade para tablets (768px) */
+@media (max-width: 768px) {
+  /* Header */
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 10px;
+    margin-top: -80px;
+  }
+
+  #logo {
+    margin: 0 auto 15px;
+    text-align: center;
+  }
+
+  #sobre_nos {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  #sobre_nos a {
+    display: block;
+    margin: 5px 0;
+    padding: 8px;
+  }
+
+  #ctt {
+    width: 80%;
+    margin: 15px auto;
+    padding: 10px;
+    display: none;
+  }
+
+  /* Sobre */
+  .sobre {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+
+  .sobre #primeiro,
+  .sobre #segundo {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  #segundo #imagem_sobre {
+    width: 100%;
+    float: none;
+    margin-top: 20px;
+  }
+  #marcacao {
+    width: 100%;
+    float: none;
+    margin-top: 20px;
+  }
+
+  .btn_sobre1,
+  .btn_sobre2 {
+    margin-top: 20px;
+    padding: 12px;
+    width: 45%;
+  }
+
+  /* Informações */
+  #informacao {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #info1,
+  #info2,
+  #info3,
+  #info4 {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+  }
+
+  /* Missão */
+  #missao {
+    flex-direction: column;
+  }
+
+  #missao #bloco_a,
+  #missao #bloco_b {
+    width: 100%;
+  }
+
+  #bloco_b {
+    padding: 20px 0;
+  }
+
+  /* Equipe */
+  #apresentacao,
+  #apresentacao2 {
+    flex-direction: column;
+  }
+
+  #apresentacao #card1,
+  #apresentacao #card2,
+  #apresentacao #card3,
+  #apresentacao2 #card4,
+  #apresentacao2 #card5 {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  #equipe_titulo {
+    display: block !important;
+    margin-top: 30px;
+  }
+}
+
+/* Responsividade para celulares (480px) */
+@media (max-width: 480px) {
+  /* Header */
+  #sobre_nos a {
+    font-size: 14px;
+  }
+
+  /* Sobre */
+  #sobre {
+    font-size: 20px;
+  }
+
+  #moon {
+    font-size: 28px;
+  }
+
+  #nossainfo {
+    font-size: 16px;
+  }
+
+  .btn_sobre1,
+  .btn_sobre2 {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /* Missão */
+  h1 {
+    font-size: 36px;
+    padding: 15px;
+  }
+
+  #bloco_b #titulo {
+    font-size: 28px;
+  }
+
+  #bloco_b #paragrafo {
+    font-size: 16px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .footer-section {
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Ajustes para telas médias (entre 769px e 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Sobre */
+  .sobre {
+    flex-direction: column;
+  }
+
+  .sobre #primeiro,
+  .sobre #segundo {
+    width: 100%;
+  }
+
+  #segundo #imagem_sobre {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  /* Informações */
+  #informacao {
+    flex-wrap: wrap;
+  }
+
+  #info1,
+  #info2,
+  #info3,
+  #info4 {
+    width: 48%;
+    margin: 1%;
+  }
+
+  /* Equipe */
+  #apresentacao,
+  #apresentacao2 {
+    flex-wrap: wrap;
+  }
+
+  #apresentacao #card1,
+  #apresentacao #card2,
+  #apresentacao #card3 {
+    width: 30%;
+    margin: 1%;
+  }
+
+  #apresentacao2 #card4,
+  #apresentacao2 #card5 {
+    width: 48%;
+    margin: 1%;
+  }
+}
+
+/* Menu Hamburguer */
+#menu-toggle {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  z-index: 1000;
+}
+
+.hamburger {
+  width: 30px;
+  height: 3px;
+  background: #000;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.hamburger:before,
+.hamburger:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: #000;
+  transition: all 0.3s ease;
+}
+
+.hamburger:before {
+  top: -8px;
+}
+
+.hamburger:after {
+  top: 8px;
+}
+
+#menu-toggle.active .hamburger {
+  background: transparent;
+}
+
+#menu-toggle.active .hamburger:before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+#menu-toggle.active .hamburger:after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+/* Responsividade para tablets e celulares */
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  #sobre_nos {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    flex-direction: column;
+    padding: 80px 20px 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
+    z-index: 999;
+  }
+
+  #sobre_nos.active {
+    left: 0;
+  }
+
+  #sobre_nos a {
+    margin: 15px 0;
+    padding: 12px;
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+  }
+
+  #ctt {
+    margin: 20px auto 0;
+    width: 80%;
+    padding: 12px;
+  }
+
+  #logo {
+    margin-left: 20px;
+  }
+}
