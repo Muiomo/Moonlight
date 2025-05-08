@@ -2,6 +2,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -25,7 +26,7 @@ nav {
 }
 #logo #logo_moon {
   width: 50px;
-  height: 20px;
+  height: 50px;
 }
 #sobre_nos {
   flex: 70%;
@@ -66,22 +67,31 @@ nav {
 #sobre {
   font-size: 25px;
   margin-top: 0px;
+  color: #18153d;
 }
 #moon {
   font-size: 35px;
+  font-weight: bold;
+  color: #18153d;
 }
 #nossainfo {
   font-size: 20px;
   text-align: left;
+  color: #647491;
 }
 
+.adlink {
+  text-decoration: none;
+  color: #18153d;
+}
 .btn_sobre1 {
   margin-top: 70px;
   padding: 20px;
-  background-color: rgb(65, 207, 65);
-  border: none;
+  background-color: #8363f3;
+  border: 1px solid #8363f3;
   border-radius: 10px;
   margin-right: 5%;
+  width: 200px;
 }
 .btn_sobre2 {
   margin-top: 70x;
@@ -98,7 +108,7 @@ nav {
 }
 
 #segundo #imagem_sobre {
-  width: 450px;
+  width: 550px;
   float: right;
 }
 
@@ -110,56 +120,60 @@ nav {
 /*INFORMACAO ANO DA CRIACAO,LOCALIZACAO ET*/
 #informacao {
   display: flex;
-  width: 90%;
-  background-color: rgba(128, 128, 128, 0);
-  height: auto;
-  margin-top: 60px;
+  width: 86%;
   margin-left: 5%;
-  margin-right: 5%;
+  margin-right: 3%;
+  height: 100px;
+  margin-top: 60px;
+
   border-radius: 10px;
 }
-
+h3 {
+  color: #18153d;
+}
 #info1 {
-  background-color: #ffffff;
-  color: black;
+  background-color: #f3efefad;
+  color: #647491;
   width: 25%;
-  height: 80px;
+  height: 100px;
   border-radius: 10px;
   text-align: center;
-  margin-right: 2%;
+  margin-right: 4%;
 }
 #info2 {
-  background-color: #ffffff;
-  color: black;
+  background-color: #f3efefad;
+  color: #647491;
   width: 25%;
-  height: 80px;
+  height: 100px;
   border-radius: 10px;
   text-align: center;
-  margin-right: 2%;
+  margin-right: 3%;
 }
 #info3 {
-  background-color: #ffffff;
-  color: black;
+  background-color: #f3efefad;
+  color: #647491;
   width: 25%;
-  height: 80px;
+  height: 100px;
   border-radius: 10px;
   text-align: center;
-  margin-right: 2%;
+  margin-right: 3%;
 }
 #info4 {
-  background-color: #ffffff;
-  color: black;
+  background-color: #f3efefad;
+  color: #647491;
   width: 25%;
-  height: 80px;
+  height: 100px;
   border-radius: 10px;
   text-align: center;
 }
 
-h1 {
+#misss {
   text-align: center;
   padding: 25px;
-  font-size: 50px;
+  font-size: 40px;
+  color: #18153d;
 }
+
 #missao {
   display: flex;
   width: 90%;
@@ -184,10 +198,12 @@ h1 {
   font-size: 35px;
   font-weight: bold;
   margin-top: 0px;
+  color: #18153d;
 }
 
 #bloco_b #paragrafo {
   font-size: 20px;
+  color: #647491;
 }
 
 /*EQUPE*/
@@ -209,18 +225,19 @@ h1 {
   display: none;
 }
 
-#equipe_titulo {
+#servicos_titulo {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
   margin-top: 50px;
-  display: none;
+  display: block;
+  color: #18153d;
 }
 
 #apresentacao #card1 {
   background-color: rgb(240, 239, 239);
   width: 33%;
-  height: 200px;
+  height: 280px;
   padding: 5px;
   text-align: center;
   border-radius: 10px;
@@ -230,7 +247,7 @@ h1 {
 #apresentacao #card2 {
   background-color: rgb(240, 239, 239);
   width: 33%;
-  height: 200px;
+  height: 280px;
   padding: 5px;
   text-align: center;
   border-radius: 10px;
@@ -239,7 +256,7 @@ h1 {
 #apresentacao #card3 {
   background-color: rgb(240, 239, 239);
   width: 33%;
-  height: 200px;
+  height: 280px;
   padding: 5px;
   text-align: center;
   border-radius: 10px;
@@ -249,7 +266,7 @@ h1 {
   background-color: rgb(240, 239, 239);
   width: 40%;
   display: inline-block;
-  height: 200px;
+  height: 280px;
   padding: 5px;
   text-align: center;
   border-radius: 10px;
@@ -279,8 +296,9 @@ h1 {
 }
 
 /*FINALMENTE O FOOTER*/
+
 .footer {
-  background-color: #0a1f44; /* azul escuro estiloso */
+  background: linear-gradient(to right, #5d0274, #002e7c);
   color: #fff;
   padding: 40px 20px;
   display: flex;
@@ -291,6 +309,10 @@ h1 {
   margin-top: 50px;
 }
 
+h4 {
+  color: #18153d;
+}
+
 .footer-section {
   flex: 1 1 200px;
   min-width: 180px;
@@ -299,7 +321,7 @@ h1 {
 .footer-section h4 {
   font-size: 1.2rem;
   margin-bottom: 10px;
-  color: #00bfff;
+  color: #3d7aff;
 }
 
 .footer-section ul {
@@ -325,5 +347,17 @@ h1 {
   .footer {
     flex-direction: column;
     align-items: flex-start;
+    height: auto;
+    display: block;
   }
+}
+
+#direitos_autorais {
+  text-align: center;
+  background: linear-gradient(to right, #5d0274, #002e7c);
+  margin: 0;
+  width: 60%;
+  color: #fff;
+  width: 100%;
+  padding-bottom: 30px;
 }

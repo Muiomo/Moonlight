@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
     this.classList.toggle("active");
     sobreNos.classList.toggle("active");
 
-    // Impede a rolagem do corpo quando o menu está aberto
     if (sobreNos.classList.contains("active")) {
       document.body.style.overflow = "hidden";
     } else {
@@ -14,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Fecha o menu ao clicar em um link
   const navLinks = document.querySelectorAll("#sobre_nos a");
   navLinks.forEach((link) => {
     link.addEventListener("click", function () {
